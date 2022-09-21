@@ -1,11 +1,16 @@
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { View, StyleSheet, Text } from 'react-native';
 import React from 'react';
+import { useChatClient } from './useChatClient';
+
 
 export default function Chatscreen() {
     return (
-        <View style={styles.container}>
-            <Text>Chatscreen</Text>
-        </View>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <View style={styles.container}>
+                <Text>Chatscreen</Text>
+            </View>
+        </GestureHandlerRootView>
     );
 }
 
